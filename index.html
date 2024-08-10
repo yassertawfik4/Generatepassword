@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="generate fadeAnimaton">
+        <h1>Generate Password</h1>
+        <label for="number">Input Namber Of Password</label>
+        <input type="number" id="number" value="8" min="8" max="20" >
+       <div class="divSelect">
+        <label>Select Type :</label>
+        <select id="passwordType">
+            <option value="nums">Numbers</option>
+            <option value="words">Letters</option>
+            <option value="numbersAndWords">Numbers & Letters</option>
+            <option value="SymbolsAndWords">Numbers & Letters & Symbols</option>
+        </select><br><br>
+       </div>
+
+        <button onclick="generatePassword()">Generate</button>
+        <h4 >Your Password : <span id="passwordDiv"></span> <button class="copypass" onclick="copyText()" id="copy" >Copy</button></h4>
+        
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
